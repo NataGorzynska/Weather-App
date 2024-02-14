@@ -16,3 +16,12 @@ header {
   border-bottom: 1px solid;
   padding: 0 0 30px 0;
 }
+
+.search-form-input {
+  background-color: #f9f7fe;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 20px;
+}
