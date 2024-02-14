@@ -11,3 +11,8 @@ body {
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
+header {
+  color: #f9f7fe;
+  border-bottom: 1px solid;
+  padding: 0 0 30px 0;
+}
