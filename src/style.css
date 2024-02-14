@@ -25,3 +25,13 @@ header {
   border: none;
   padding: 15px 20px;
 }
+
+.search-form-button {
+  background: #885df1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-left: 4px;
+}
