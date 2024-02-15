@@ -55,8 +55,9 @@ header {
   font-weight: bold;
 }
 .weather-app-icon {
-  width: 88px;
-  height: 88px;
+  font-size: 44px;
+  margin-top: 15px;
+  margin-right: 10px;
 }
 .weather-app-temperature-container {
   display: flex;
