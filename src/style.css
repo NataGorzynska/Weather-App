@@ -82,3 +82,9 @@ a {
 .weather-app-details-strong {
   color: #f65282;
 }
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+}
