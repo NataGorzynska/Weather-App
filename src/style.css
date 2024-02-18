@@ -88,3 +88,15 @@ a {
   margin-top: 20px;
   display: inline-block;
 }
+.day-forecast {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.temp-max {
+  font-size: 13px;
+  color: #202124;
+}
+.temp-min {
+  color: #70757a;
+  font-size: 13px;
+}
