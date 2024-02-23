@@ -58,3 +58,31 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Warsaw");
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast-container");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      ` 
+ <div class="weather-forecast">
+          <div class="day-forecast">${day}</div>
+          <div class="icon-forecast">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              alt=""
+              width="46"
+            />
+          </div>
+          <div class="temp-forecast">
+            <span class="temp-max">18</span> <span class="temp-min">12</span>
+          </div>
+        </div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
