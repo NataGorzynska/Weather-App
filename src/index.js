@@ -19,6 +19,7 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 
   temperatureElement.innerHTML = Math.round(temperature);
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -59,7 +60,8 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Warsaw");
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast-container");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -85,4 +87,8 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+function getForecast(city) {
+  let apiKey = "bae43f15fd02cbb438b0o0aa3c1e9ct8";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
