@@ -100,3 +100,11 @@ a {
   color: #70757a;
   font-size: 13px;
 }
+
+.weather-forecast {
+  padding: 17px;
+}
+
+.weather-forecast-icon {
+  width: 80px;
+}
