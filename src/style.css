@@ -115,5 +115,8 @@ a {
   color: #f65282;
 }
 .temp-min {
-  opacity: 0.6;
+  opacity: 0.8;
+}
+.temp-max {
+  font-weight: bold;
 }
